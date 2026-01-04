@@ -28,7 +28,7 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
+
     // Simulación de envío (aquí iría la lógica real)
     setTimeout(() => {
       setIsSubmitting(false)
@@ -51,28 +51,27 @@ export default function Contact() {
     {
       icon: HiMail,
       label: 'Email',
-      value: 'hola@tudominio.com',
-      href: 'mailto:hola@tudominio.com',
+      value: 'mililasschar@gmail.com',
+      href: 'mailto:mililasschar@gmail.com',
     },
     {
       icon: HiPhone,
       label: 'Teléfono',
-      value: '+34 123 456 789',
-      href: 'tel:+34123456789',
+      value: '+54 9 11 5915-4687',
+      href: 'https://wa.me/5491159154687',
     },
     {
       icon: HiLocationMarker,
       label: 'Ubicación',
-      value: 'Madrid, España',
-      href: '#',
+      value: 'Argentina, Buenos Aires, CABA',
     },
   ]
 
   const socialLinks = [
-    { icon: FaGithub, href: '#', label: 'GitHub' },
-    { icon: FaLinkedin, href: '#', label: 'LinkedIn' },
-    { icon: FaBehance, href: '#', label: 'Behance' },
-    { icon: FaDribbble, href: '#', label: 'Dribbble' },
+    { icon: FaGithub, href: 'https://github.com/Molly2605', label: 'GitHub' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/milagros-lasschar-web-designer/', label: 'LinkedIn' },
+    { icon: FaBehance, href: 'https://www.behance.net/milalasschar', label: 'Behance' },
+    //{ icon: FaDribbble, href: '#', label: 'Dribbble' },//
   ]
 
   const containerVariants = {
@@ -104,8 +103,8 @@ export default function Contact() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-600 to-accent-600 mx-auto mb-6 sm:mb-8"></div>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4 sm:px-0">
-            ¿Tienes un proyecto en mente? Me encantaría escucharte y trabajar
-            contigo para hacerlo realidad.
+            ¿Tenés un proyecto en mente?
+            Estoy abierta a nuevas oportunidades y colaboraciones. Escribime y charlamos.
           </p>
         </motion.div>
 

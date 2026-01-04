@@ -22,37 +22,37 @@ export default function About() {
     {
       icon: FaCode,
       title: 'Desarrollo Frontend',
-      description: 'React, Next.js, TypeScript, JavaScript',
+      description: 'React, Next.js, Vue.js, Vite.js, TypeScript, JavaScript, HTML5, CSS3',
       color: 'from-blue-500 to-cyan-500',
     },
     {
       icon: FaPalette,
       title: 'Diseño UI/UX',
-      description: 'Figma, Adobe XD, Design Systems',
+      description: 'Figma, Design Systems,User Interface Design, Adobe Illustrator - Photoshop, Canva',
       color: 'from-purple-500 to-pink-500',
     },
     {
       icon: FaMobile,
-      title: 'Responsive Design',
-      description: 'Mobile-first, Progressive Web Apps',
+      title: 'Responsive & Accesibilidad',
+      description: 'Mobile-first Design, Responsive Layouts, Progressive Web Apps (PWA), Accesibilidad Web (WCAG, buenas prácticas)',
       color: 'from-green-500 to-emerald-500',
     },
     {
-      icon: FaRocket,
-      title: 'Performance',
-      description: 'Optimización, SEO, Core Web Vitals',
+      icon: FaUsers,
+      title: 'Experiencia de Usuario & Research',
+      description: 'User Research, User Testing, Personas, User Journey Maps, Arquitectura de Información',
       color: 'from-orange-500 to-red-500',
     },
     {
-      icon: FaUsers,
-      title: 'User Research',
-      description: 'User Testing, Personas, Journey Maps',
+      icon: FaRocket,
+      title: 'Performance & SEO',
+      description: 'Optimización de Performance, SEO Técnico, Core Web Vitals, Optimización de imágenes y assets',
       color: 'from-indigo-500 to-blue-500',
     },
     {
       icon: FaLightbulb,
-      title: 'Innovación',
-      description: 'Tendencias, Mejores Prácticas',
+      title: 'Herramientas & CRM',
+      description: 'Salesforce CRM, Gestión de datos y usuarios, Integración con procesos de negocio, Mejores prácticas y automatización básica',
       color: 'from-yellow-500 to-orange-500',
     },
   ]
@@ -120,7 +120,6 @@ export default function About() {
             <div className="bg-gradient-to-br from-primary-100 to-accent-100 rounded-2xl p-6 sm:p-8 shadow-xl">
               <div className="aspect-square bg-gradient-to-br from-primary-400 to-accent-400 rounded-xl flex items-center justify-center">
                 <img src="/img/my-profile.png" alt="my-profile" />
-                
               </div>
             </div>
           </motion.div>

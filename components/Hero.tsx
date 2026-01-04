@@ -10,7 +10,7 @@ export default function Hero() {
     { icon: FaGithub, href: 'https://github.com/Molly2605', label: 'GitHub' },
     { icon: FaLinkedin, href: 'https://www.linkedin.com/in/milagros-lasschar-web-designer/', label: 'LinkedIn' },
     { icon: FaBehance, href: 'https://www.behance.net/milalasschar', label: 'Behance' },
-    { icon: FaDribbble, href: '#', label: 'Dribbble' },
+    //{ icon: FaDribbble, href: '#', label: 'Dribbble' },//
   ]
 
   const scrollToAbout = () => {
@@ -44,7 +44,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <span className="gradient-text">Hola, soy Milagros Lasschar</span>
+            <span className="gradient-text">Hola, soy Molly!</span>
             <br />
             <span className="text-gray-900">Desarrolladora Web</span>
             <br />
@@ -57,8 +57,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            Creo experiencias digitales hermosas y funcionales que conectan
-            usuarios con productos increíbles.
+            Creo experiencias digitales hermosas. Diseño y desarrollo con propósito, estética y usabilidad
           </motion.p>
 
           <motion.div

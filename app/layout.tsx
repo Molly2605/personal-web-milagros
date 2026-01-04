@@ -4,8 +4,12 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Portafolio - Desarrolladora Web & Diseñadora UX/UI',
+  title: 'Milagros Lasschar - Desarrolladora Web & Diseñadora UX/UI',
   description: 'Portafolio profesional de desarrolladora web y diseñadora UX/UI',
+  icons: {
+    icon: '/favicon.png',
+    apple: '/favicon.png',
+  },
 }
 
 export default function RootLayout({
@@ -23,4 +27,3 @@ export default function RootLayout({
     </html>
   )
 }
-

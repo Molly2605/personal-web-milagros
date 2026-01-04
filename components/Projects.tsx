@@ -5,6 +5,8 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { HiX, HiExternalLink, HiCode } from 'react-icons/hi'
 import { projectsData } from '../data/projects'
+import Image from 'next/image'
+
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState<number | null>(null)
@@ -56,11 +58,22 @@ export default function Projects() {
               onClick={() => setSelectedProject(index)}
               whileHover={{ scale: 1.02 }}
             >
-              <div className="relative h-40 sm:h-48 bg-gradient-to-br from-primary-400 to-accent-400">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-5xl sm:text-6xl">{project.emoji}</span>
-                </div>
+              <div className="relative h-40 sm:h-48">
+                {project.img ? (
+                  <Image
+                    src={project.img}
+                    alt={project.title}
+                    fill
+                    className="object-cover rounded-t-xl"
+                    sizes="(max-width: 640px) 100vw, 33vw"
+                  />
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary-400 to-accent-400">
+                    <span className="text-5xl sm:text-6xl">{project.emoji}</span>
+                  </div>
+                )}
               </div>
+
               <div className="p-4 sm:p-6">
                 <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
                   {project.title}
@@ -121,11 +134,24 @@ export default function Projects() {
 
                   {selectedProject !== null && (
                     <div>
-                      <div className="h-40 sm:h-48 md:h-64 bg-gradient-to-br from-primary-400 to-accent-400 flex items-center justify-center">
-                        <span className="text-5xl sm:text-6xl md:text-8xl">
-                          {projectsData[selectedProject].emoji}
-                        </span>
+                      <div className="relative h-40 sm:h-48 md:h-64">
+                        {projectsData[selectedProject].img ? (
+                          <Image
+                            src={projectsData[selectedProject].img}
+                            alt={projectsData[selectedProject].title}
+                            fill
+                            className="object-cover rounded-t-xl"
+                            sizes="(max-width: 640px) 100vw, 50vw"
+                          />
+                        ) : (
+                          <div className="h-full flex items-center justify-center bg-gradient-to-br from-primary-400 to-accent-400">
+                            <span className="text-5xl sm:text-6xl md:text-8xl">
+                              {projectsData[selectedProject].emoji}
+                            </span>
+                          </div>
+                        )}
                       </div>
+
                       <div className="p-4 sm:p-6 md:p-8">
                         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
                           {projectsData[selectedProject].title}

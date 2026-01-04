@@ -6,10 +6,10 @@ import { FaGithub, FaLinkedin, FaBehance, FaDribbble } from 'react-icons/fa'
 export default function Footer() {
   const currentYear = new Date().getFullYear()
   const socialLinks = [
-    { icon: FaGithub, href: '#', label: 'GitHub' },
-    { icon: FaLinkedin, href: '#', label: 'LinkedIn' },
-    { icon: FaBehance, href: '#', label: 'Behance' },
-    { icon: FaDribbble, href: '#', label: 'Dribbble' },
+    { icon: FaGithub, href: 'https://github.com/Molly2605', label: 'GitHub' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/milagros-lasschar-web-designer/', label: 'LinkedIn' },
+    { icon: FaBehance, href: 'https://www.behance.net/milalasschar', label: 'Behance' },
+    // { icon: FaDribbble, href: '#', label: 'Dribbble' },//
   ]
 
   return (
@@ -18,11 +18,12 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
           <div>
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4 gradient-text">
-              Portfolio
+              Milagros Belén Lasschar
             </h3>
             <p className="text-sm sm:text-base text-gray-400">
-              Desarrolladora web y diseñadora UX/UI apasionada por crear
-              experiencias digitales excepcionales.
+              Desarrolladora web · Diseñadora UX/UI · Admin CRM en Salesforce. Amante de la comunicación con impacto, madre de gatos y activista por la visibilización de feminidades. Estudiante de Paleontología en la UBA.
+              Amor por la flora y fauna argentina.
+              Sueño con vivir en Ushuaia. Me llaman Molly. 🍓
             </p>
           </div>
 
@@ -77,8 +78,8 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 pt-6 sm:pt-8 text-center text-gray-400">
           <p className="text-xs sm:text-sm">
-            © {currentYear} Portfolio. Todos los derechos reservados. Hecho con
-            ❤️ usando Next.js
+            © {currentYear} Portfolio Milagros Belén Lasschar. Todos los derechos reservados. Hecho con
+            💗 usando Next.js
           </p>
         </div>
       </div>
