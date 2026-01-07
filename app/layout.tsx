@@ -4,8 +4,8 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Milagros Lasschar - Desarrolladora Web & Diseñadora UX/UI',
-  description: 'Portafolio profesional de desarrolladora web y diseñadora UX/UI',
+  title: 'Portfolio Milagros Lasschar — Frontend Developer + UX/UI + Salesforce Admin',
+  description: 'Portfolio Milagros Lasschar — Frontend Developer + UX/UI + Salesforce Admin',
   icons: {
     icon: '/favicon.png',
     apple: '/favicon.png',

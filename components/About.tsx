@@ -88,28 +88,27 @@ export default function About() {
             <span className="gradient-text">Sobre Mí</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-600 to-accent-600 mx-auto mb-6 sm:mb-8"></div>
+          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4 sm:px-0">
+            Perfil híbrido que conecta diseño, desarrollo y procesos comerciales.
+          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16">
           <motion.div variants={itemVariants} className="order-2 md:order-1">
             <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">
-              Apasionada por crear experiencias digitales excepcionales
+              ¿Qué problema ayuda a resolver una diseñadora/frontend como yo?
             </h3>
             <p className="text-base sm:text-lg text-gray-600 mb-4 leading-relaxed">
-              Soy una desarrolladora web y diseñadora UX/UI con una pasión por
-              crear soluciones digitales que no solo se ven increíbles, sino
-              que también funcionan perfectamente. Mi enfoque combina la
-              estética del diseño con la funcionalidad del código.
+              Ayudo a empresas y equipos a convertir ideas y necesidades de negocio en experiencias digitales claras, funcionales y usables. Diseño y desarrollo soluciones que no solo se ven bien, sino que funcionan correctamente para el usuario y el negocio.
             </p>
             <p className="text-base sm:text-lg text-gray-600 mb-4 leading-relaxed">
-              Con experiencia en desarrollo frontend moderno y diseño centrado
-              en el usuario, me especializo en transformar ideas complejas en
-              interfaces intuitivas y accesibles que los usuarios adoran.
+              Mi enfoque combina diseño UX/UI centrado en el usuario con desarrollo frontend moderno, logrando interfaces accesibles, intuitivas y fáciles de mantener. Trabajo desde la comprensión del problema hasta la implementación visual y técnica.
+            </p>
+            <p className="text-base sm:text-lg text-gray-600 mb-4 leading-relaxed">
+              Me especializo en transformar ideas complejas en productos digitales simples, priorizando usabilidad, accesibilidad y coherencia visual para que los usuarios interactúen sin fricción.
             </p>
             <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-              Cuando no estoy codificando o diseñando, me encanta explorar
-              nuevas tendencias en tecnología, participar en comunidades de
-              desarrollo y siempre estar aprendiendo algo nuevo.
+              Además, como Administradora CRM en Salesforce, configuro pipelines de ventas y automatizo procesos básicos que optimizan la gestión comercial, reducen errores humanos y ahorran tiempo operativo.
             </p>
           </motion.div>
 
@@ -119,7 +118,7 @@ export default function About() {
           >
             <div className="bg-gradient-to-br from-primary-100 to-accent-100 rounded-2xl p-6 sm:p-8 shadow-xl">
               <div className="aspect-square bg-gradient-to-br from-primary-400 to-accent-400 rounded-xl flex items-center justify-center">
-                <img src="/img/my-profile.png" alt="my-profile" />
+                <img src="/img/my-profile.png" alt="mi-foto-personal" />
               </div>
             </div>
           </motion.div>
@@ -127,7 +126,7 @@ export default function About() {
 
         <motion.div variants={itemVariants}>
           <h3 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 text-gray-900 px-4 sm:px-0">
-            Mis Habilidades
+            Herramientas y conocimientos que utilizo para diseñar, desarrollar y optimizar experiencias digitales.
           </h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {skills.map((skill, index) => (

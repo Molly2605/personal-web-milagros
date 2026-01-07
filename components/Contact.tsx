@@ -103,8 +103,7 @@ export default function Contact() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-600 to-accent-600 mx-auto mb-6 sm:mb-8"></div>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4 sm:px-0">
-            ¿Tenés un proyecto en mente?
-            Estoy abierta a nuevas oportunidades y colaboraciones. Escribime y charlamos.
+            ¿Tenés un proyecto o una oportunidad? Hablemos.
           </p>
         </motion.div>
 

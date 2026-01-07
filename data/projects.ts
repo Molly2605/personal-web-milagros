@@ -16,9 +16,9 @@ export const projectsData: Project[] = [
     description:
       'Landing page, simulacion agencia de viajes a destinos no tradicionales',
     fullDescription:
-      'Latitud Sur es una agencia de viajes que ofrece experiencias turísticas no masivas, enfocadas en apoyar a comunidades y grupos locales. Esta Landing page fue desarrollada con HTML, CSS y JavaScript en el marco de una beca de Salesforce, como parte de una experiencia práctica de aprendizaje. Además del trabajo sobre CRM, diseñé y desarrollé la página web de la agencia con el objetivo de mejorar la experiencia del usuario y simular un entorno real de negocio, integrando diseño, desarrollo frontend y visión de producto.',
+      'Latitud Sur es una agencia de viajes que ofrece experiencias turísticas no masivas, enfocadas en apoyar a comunidades y grupos locales. Esta Landing page fue desarrollada con HTML, CSS y JavaScript en el marco de una beca de Salesforce, como parte de una experiencia práctica de aprendizaje. Además del trabajo sobre CRM, diseñé y desarrollé la página web de la agencia con el objetivo de mejorar la experiencia del usuario y simular un entorno real de negocio, integrando diseño, desarrollo frontend y visión de producto. ¿Qué hice como administradora Salesforce en mi proyectos? ',
     emoji: '🛍️',
-    img: '/img/latitud-sur.png',
+    img: '/img/latitud-sur-salesforce-uxui-front.png',
     technologies: [
       'HTML',
       'CSS',
@@ -29,6 +29,11 @@ export const projectsData: Project[] = [
       'Simulación de entorno real de negocio',
       'Optimizado para SEO',
       'Diseño responsivo',
+      'Configuración de objetos',
+      'Automatización básica (flows) - CRM',
+      'Gestión de leads y oportunidades - CRM',
+      'Optimización del proceso comercial - CRM',
+      'creacion de bots personalizados para clientes - CRM',
     ],
     liveUrl: 'https://molly2605.github.io/Latitud-Sur/',
     githubUrl: 'https://github.com/Molly2605/Latitud-Sur',
@@ -38,8 +43,8 @@ export const projectsData: Project[] = [
     description:
       'Landing page desarrollada para una startup de ventas de cerraduras biométricas',
     fullDescription:
-      'Desarrollada con HTML, CSS y JavaScript. La web tiene un enfoque comercial, mostrando las 4 cerraduras disponibles y brindando a los usuarios información visual y funcional para facilitar la decisión de compra. Apariencia moderna con transiciones elegantges',
-    img: '/img/keynova.png',
+      'Desarrollada con HTML, CSS y JavaScript. La web tiene un enfoque comercial, mostrando las 4 cerraduras disponibles y brindando a los usuarios información visual y funcional para facilitar la decisión de compra. Apariencia moderna con transiciones elegantges.',
+    img: '/img/keynova-uxui-front.png',
     technologies: [
       'HTML',
       'CSS',
@@ -60,7 +65,7 @@ export const projectsData: Project[] = [
       'Sitio web portafolio con diseño único y animaciones fluidas.',
     fullDescription:
       'Un portafolio personal desarrollado con Next.js y Framer Motion. Presenta proyectos de manera visualmente atractiva con animaciones suaves y transiciones elegantes. Incluye secciones de proyectos, sobre mí y contacto.',
-    img: '/img/first-portfolio.png',
+    img: '/img/first-portfolio-front.png',
     technologies: ['React', 'Next.js', 'Framer Motion', 'Tailwind CSS', 'JavaScript'],
     features: [
       'Animaciones fluidas',
@@ -81,7 +86,7 @@ export const projectsData: Project[] = [
       'Una aplicación de asistencia en moda impulsada por inteligencia artificial.',
     fullDescription:
       'Proyecto UX/UI completo — Este proyecto consistió en diseñar una solución digital para la problemática de organizarse a la hora de salir, abordando todo el proceso de desarrollo UX/UI. A lo largo del proyecto, realicé: investigación de marca y mercado, identificación de necesidades, motivaciones y deseos de los usuarios. Definición de personas, competencias de marca, mapeo del usuario y su “camino feliz". Diseño de interfaces funcionales y atractivas, optimizadas para mejorar la experiencia del usuario.',
-    img: '/img/ia-maev.png',
+    img: '/img/ia-maev-uxui.png',
     technologies: [
       'Diseño UX/UI',
       'FIGMA',
@@ -103,7 +108,7 @@ export const projectsData: Project[] = [
     description: 'Proyecto de e-commerce de productos para el hogar, desarrollado con foco en experiencia de usuario y navegación simple.',
     fullDescription:
       'E-commerce básico desarrollado con React + Vite. Integra tanto el front-end como la gestión de datos en el back-end. Implementé funcionalidades de autenticación, manejo de formularios y animaciones para mejorar la experiencia de usuario.',
-    img: '/img/my-ecommerce.png',
+    img: '/img/my-ecommerce-front.png',
     technologies: [
       'React',
       'Vite',
@@ -132,7 +137,7 @@ export const projectsData: Project[] = [
       'Página de aterrizaje moderna para producto SaaS con alta conversión.',
     fullDescription:
       'Una landing page optimizada para conversión desarrollada con Next.js. Incluye secciones de hero, características, testimonios, precios y CTA estratégicamente ubicados. Diseñada siguiendo mejores prácticas de UX/UI para maximizar conversiones.',
-    img: '/img/latitud-merch.png',
+    img: '/img/latitud-merch-uxui.png',
     technologies: [
       'adobe Illustrator',
       'A/B Testing',

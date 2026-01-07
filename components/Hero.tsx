@@ -57,7 +57,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            Creo experiencias digitales hermosas. Diseño y desarrollo con propósito, estética y usabilidad
+            Diseño y desarrollo interfaces centradas en el usuario que combinan estética, funcionalidad y objetivos de negocio.
           </motion.p>
 
           <motion.div

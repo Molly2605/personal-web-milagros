@@ -40,12 +40,11 @@ export default function Projects() {
       >
         <motion.div className="text-center mb-12 sm:mb-16" variants={itemVariants}>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4 sm:px-0">
-            <span className="gradient-text">Mis Proyectos</span>
+            <span className="gradient-text">¿Qué soluciones reales resolví con frontend y UX?</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-600 to-accent-600 mx-auto mb-6 sm:mb-8"></div>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4 sm:px-0">
-            Explora algunos de mis trabajos más recientes. Cada proyecto
-            representa mi pasión por el diseño y el desarrollo.
+            Casos prácticos que muestran cómo resuelvo problemas reales con diseño y tecnología.
           </p>
         </motion.div>
 
