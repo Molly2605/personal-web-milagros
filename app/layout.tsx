@@ -28,13 +28,19 @@ export default function RootLayout({
         />
         <Script id="ga-script" strategy="afterInteractive">
           {`
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
-  `}
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+    `}
         </Script>
+
+        {/* SEO / AEO */}
+        <meta name="robots" content="index, follow" />
+        <meta name="description" content="Portfolio de Milagros Lasschar — Frontend Developer, UX/UI Designer y Salesforce Admin. Experiencias digitales centradas en el usuario y soluciones creativas con código y diseño." />
+        <link rel="canonical" href="https://milagros-lasschar-portfolio.netlify.app/" />
       </head>
+
       <body>
         <Navigation />
         <main>{children}</main>
