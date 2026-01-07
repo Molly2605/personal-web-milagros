@@ -3,22 +3,14 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { HiArrowDown } from 'react-icons/hi'
-import { FaGithub, FaLinkedin, FaBehance, FaDribbble } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaBehance } from 'react-icons/fa'
 
 export default function Hero() {
   const socialLinks = [
     { icon: FaGithub, href: 'https://github.com/Molly2605', label: 'GitHub' },
     { icon: FaLinkedin, href: 'https://www.linkedin.com/in/milagros-lasschar-web-designer/', label: 'LinkedIn' },
     { icon: FaBehance, href: 'https://www.behance.net/milalasschar', label: 'Behance' },
-    //{ icon: FaDribbble, href: '#', label: 'Dribbble' },//
   ]
-
-  const scrollToAbout = () => {
-    const element = document.querySelector('#about')
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
 
   return (
     <section
@@ -82,22 +74,23 @@ export default function Hero() {
             ))}
           </motion.div>
 
-          <motion.button
-            onClick={scrollToAbout}
-            className="inline-flex items-center space-x-2 bg-gradient-to-r from-primary-600 to-accent-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all text-sm sm:text-base"
+          {/* Botón de descarga de CV */}
+          <motion.div
+            className="flex justify-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
           >
-            <span className="hidden sm:inline">Conoce más sobre mí</span>
-            <span className="sm:hidden">Conoce más</span>
-            <HiArrowDown className="w-4 h-4 sm:w-5 sm:h-5 animate-bounce" />
-          </motion.button>
+            <a
+              href="/cv/CV Milagros Lasschar.pdf"
+              download="CV Milagros Lasschar.pdf"
+              className="inline-flex items-center space-x-2 bg-gradient-to-r from-primary-600 to-accent-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all text-sm sm:text-base"
+            >
+              <span>Descargar CV</span>
+            </a>
+          </motion.div>
         </motion.div>
       </div>
     </section>
   )
 }
-
