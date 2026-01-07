@@ -1,5 +1,7 @@
 export interface Project {
   title: string
+  role?: string
+  impact?: string
   description: string
   fullDescription: string
   emoji?: string
@@ -13,10 +15,13 @@ export interface Project {
 export const projectsData: Project[] = [
   {
     title: 'Latitud Sur - Salesforce',
+    role: 'UX/UI Designer, Frontend Developer y Salesforce CRM Admin',
+    impact:
+      'Integración de diseño, desarrollo frontend y CRM para simular un proceso comercial real y mejorar la experiencia del usuario.',
     description:
-      'Landing page, simulacion agencia de viajes a destinos no tradicionales',
+      'Landing page y simulación de agencia de viajes con enfoque UX y Salesforce CRM',
     fullDescription:
-      'Latitud Sur es una agencia de viajes que ofrece experiencias turísticas no masivas, enfocadas en apoyar a comunidades y grupos locales. Esta Landing page fue desarrollada con HTML, CSS y JavaScript en el marco de una beca de Salesforce, como parte de una experiencia práctica de aprendizaje. Además del trabajo sobre CRM, diseñé y desarrollé la página web de la agencia con el objetivo de mejorar la experiencia del usuario y simular un entorno real de negocio, integrando diseño, desarrollo frontend y visión de producto. ¿Qué hice como administradora Salesforce en mi proyectos? ',
+      'Latitud Sur es una agencia de viajes orientada a experiencias turísticas no masivas, enfocadas en apoyar comunidades y grupos locales. El objetivo del proyecto fue diseñar y desarrollar una landing page funcional y accesible que mejorara la experiencia del usuario y, al mismo tiempo, simulara un entorno real de negocio.\n\nEl proyecto se realizó en el marco de una beca de Salesforce como experiencia práctica de aprendizaje. Participé como diseñadora UX/UI, desarrolladora frontend y administradora CRM Salesforce, integrando diseño, desarrollo y visión de producto.\n\nComo administradora Salesforce, configuré objetos personalizados, gestioné leads y oportunidades, y automaticé procesos básicos mediante flows para optimizar el pipeline de ventas y reducir tareas manuales. Además, diseñé y desarrollé la página web utilizando HTML, CSS y JavaScript, asegurando una experiencia clara, responsive y orientada a objetivos comerciales.',
     emoji: '🛍️',
     img: '/img/latitud-sur-salesforce-uxui-front.png',
     technologies: [
@@ -26,55 +31,63 @@ export const projectsData: Project[] = [
       'Salesforce',
     ],
     features: [
-      'Simulación de entorno real de negocio',
-      'Optimizado para SEO',
-      'Diseño responsivo',
-      'Configuración de objetos',
-      'Automatización básica (flows) - CRM',
-      'Gestión de leads y oportunidades - CRM',
-      'Optimización del proceso comercial - CRM',
-      'creacion de bots personalizados para clientes - CRM',
+      'Simulación de un entorno real de negocio',
+      'Diseño responsive centrado en el usuario',
+      'Optimización básica para SEO',
+      'Configuración de objetos personalizados en Salesforce',
+      'Automatización de procesos mediante flows',
+      'Gestión de leads y oportunidades comerciales',
+      'Optimización del pipeline de ventas',
+      'Creación de bots personalizados para atención a clientes',
     ],
     liveUrl: 'https://molly2605.github.io/Latitud-Sur/',
     githubUrl: 'https://github.com/Molly2605/Latitud-Sur',
   },
   {
-    title: 'Implementación web KEYNOVA a partir del deck de diseño',
+    title: 'KEYNOVA — Implementación Web',
+    role: 'UX/UI Designer y Frontend Developer',
+    impact:
+      'Traducción de un deck de diseño en una landing comercial clara y funcional, orientada a facilitar la decisión de compra del usuario',
     description:
       'Landing page desarrollada para una startup de ventas de cerraduras biométricas',
     fullDescription:
-      'Desarrollada con HTML, CSS y JavaScript. La web tiene un enfoque comercial, mostrando las 4 cerraduras disponibles y brindando a los usuarios información visual y funcional para facilitar la decisión de compra. Apariencia moderna con transiciones elegantges.',
+      'KEYNOVA es una implementación web desarrollada a partir del deck de diseño, Brand Kit y UI Kit de la marca. El objetivo del proyecto fue crear una landing page con enfoque comercial, presentando de forma clara las cuatro cerraduras disponibles, sus características y diferencias, para ayudar a los usuarios a tomar una decisión de compra informada. La web fue desarrollada utilizando HTML, CSS y JavaScript, priorizando una apariencia moderna, jerarquía visual clara y transiciones elegantes que mejoran la percepción del producto. El diseño se trabajó con un enfoque responsive, asegurando una experiencia consistente en distintos dispositivos.',
     img: '/img/keynova-uxui-front.png',
     technologies: [
       'HTML',
       'CSS',
       'JavaScript',
-      'Material-UI',
+      'Material UI',
     ],
     features: [
-      'Diseño responsivo',
-      'Desarrollo de landing a partir de Brand Kit e UI Kit',
-      'Sistema de etiquetas y filtros',
+      'Desarrollo de landing comercial orientada a conversión',
+      'Implementación del diseño a partir de Brand Kit y UI Kit',
+      'Diseño responsive adaptable a distintos dispositivos',
+      'Sistema de etiquetas y filtros para facilitar la navegación',
+      'Mejora de la jerarquía visual y experiencia de usuario',
     ],
     liveUrl: 'https://molly2605.github.io/keynova-landing/',
     githubUrl: 'https://github.com/Molly2605/keynova-landing',
   },
   {
     title: 'Mi primer Portafolio!',
+    role: 'UX/UI Designer y Frontend Developer',
+    impact: 'Creación de un portfolio personal optimizado para performance, accesibilidad y SEO, utilizado como carta de presentación profesional.',
     description:
-      'Sitio web portafolio con diseño único y animaciones fluidas.',
+      'Portfolio personal optimizado para UX, performance y SEO, mostrando proyectos y habilidades.',
     fullDescription:
-      'Un portafolio personal desarrollado con Next.js y Framer Motion. Presenta proyectos de manera visualmente atractiva con animaciones suaves y transiciones elegantes. Incluye secciones de proyectos, sobre mí y contacto.',
+      'Mi primer portfolio es un sitio web personal desarrollado con Next.js y Framer Motion, creado con el objetivo de presentar proyectos, habilidades y experiencia de forma clara, visualmente atractiva y profesional. El proyecto incluye secciones de proyectos, sobre mí y contacto, con un enfoque en usabilidad, rendimiento y experiencia de usuario.Se trabajaron animaciones suaves y transiciones elegantes para reforzar la narrativa visual sin comprometer la performance. Durante el desarrollo se priorizó un diseño responsive, optimización de carga y buenas prácticas de SEO, además de funcionalidades prácticas como modo oscuro, formulario de contacto funcional y descarga de CV. El proyecto fue desarrollado de forma íntegra, abarcando diseño, desarrollo y optimización.',
     img: '/img/first-portfolio-front.png',
     technologies: ['React', 'Next.js', 'Framer Motion', 'Tailwind CSS', 'JavaScript'],
     features: [
-      'Animaciones fluidas',
-      'Diseño responsive',
-      'Optimización de rendimiento',
-      'Optimizado para SEO',
-      'Modo oscuro',
+      'Desarrollo de portfolio personal como herramienta profesional',
+      'Animaciones fluidas con Framer Motion',
+      'Diseño responsive adaptable a distintos dispositivos',
+      'Optimización de rendimiento y carga',
+      'Implementación de buenas prácticas de SEO',
+      'Modo oscuro para mejorar accesibilidad',
       'Formulario de contacto funcional',
-      'Descarga de cv',
+      'Descarga de CV integrada',
       'Desarrollado 100% inteligencia artesanal',
     ],
     liveUrl: 'https://mililasschar-portfolio.netlify.app/',
@@ -82,14 +95,16 @@ export const projectsData: Project[] = [
   },
   {
     title: 'Deck diseño + Demo Figma - App mobile IA:maev',
+    role: 'UX/UI Designer',
+    impact: 'Diseño y prototipo funcional que permite a los usuarios planificar outfits fácilmente, validando flujos y experiencias mediante un prototipo interactivo en Figma.',
     description:
-      'Una aplicación de asistencia en moda impulsada por inteligencia artificial.',
+      'App de asistencia en moda con inteligencia artificial para organizar outfits y mejorar la experiencia del usuario.',
     fullDescription:
-      'Proyecto UX/UI completo — Este proyecto consistió en diseñar una solución digital para la problemática de organizarse a la hora de salir, abordando todo el proceso de desarrollo UX/UI. A lo largo del proyecto, realicé: investigación de marca y mercado, identificación de necesidades, motivaciones y deseos de los usuarios. Definición de personas, competencias de marca, mapeo del usuario y su “camino feliz". Diseño de interfaces funcionales y atractivas, optimizadas para mejorar la experiencia del usuario.',
+      'Proyecto UX/UI completo — Este proyecto consistió en diseñar una solución digital para ayudar a los usuarios a organizarse a la hora de salir, abordando todo el proceso de desarrollo UX/UI. Realicé investigación de marca y mercado, identificación de necesidades, motivaciones y deseos de los usuarios. Definí personas, competencias de marca, mapeo del usuario y su “camino feliz”. Diseñé interfaces funcionales y atractivas, optimizadas para mejorar la experiencia del usuario y facilitar la interacción con la app. Se creó un prototipo funcional en Figma para validar el flujo y la usabilidad.',
     img: '/img/ia-maev-uxui.png',
     technologies: [
       'Diseño UX/UI',
-      'FIGMA',
+      'Figma',
       'Adobe Illustrator',
       'Google Drive',
     ],
@@ -98,16 +113,18 @@ export const projectsData: Project[] = [
       'UX Research',
       'UI Design',
       'Análisis de usuarios',
-      'App prototipo funcional en FIGMA'
+      'Prototipo funcional en Figma'
     ],
     liveUrl: 'https://drive.google.com/file/d/1Jm3jGLCyqAvXQFCw8gBcZ6OvKFWVcRdO/view?usp=sharing',
     githubUrl: 'https://www.figma.com/proto/Pqq85SCqXK72M3C13MnWVR/Asistente-de-moda-AI?node-id=2-2&t=UiKnLmzLyV09YUaC-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1',
   },
   {
     title: 'Basic e-commerce',
-    description: 'Proyecto de e-commerce de productos para el hogar, desarrollado con foco en experiencia de usuario y navegación simple.',
+    role: 'UX/UI Designer y Frontend Developer',
+    impact: 'Desarrollé un e-commerce funcional que mejora la navegación y facilita la experiencia de compra, asegurando eficiencia en la gestión de productos y pedidos.',
+    description: 'E-commerce de productos para el hogar, optimizado para UX, navegación simple y experiencia de compra fluida.',
     fullDescription:
-      'E-commerce básico desarrollado con React + Vite. Integra tanto el front-end como la gestión de datos en el back-end. Implementé funcionalidades de autenticación, manejo de formularios y animaciones para mejorar la experiencia de usuario.',
+      'E-commerce básico desarrollado con React y Vite, integrando front-end y back-end para una experiencia de compra completa. Implementé funcionalidades como autenticación de usuarios, gestión de formularios, carrito de compras, filtros por categorías y animaciones para mejorar la interacción. El proyecto se centró en garantizar una experiencia intuitiva, diseño responsive y control de stock en tiempo real.',
     img: '/img/my-ecommerce-front.png',
     technologies: [
       'React',
@@ -120,33 +137,34 @@ export const projectsData: Project[] = [
       'Netlify',
     ],
     features: [
-      'Carrito de compras',
-      'Sistema de filtros - secciones - etiquetas',
-      'Hisotrial de pedidos',
-      'Inicio de sesión',
-      'Creacion de usuario',
-      'Detalle de productos',
-      'Control de stock global',
+      'Carrito de compras funcional',
+      'Sistema de filtros por secciones y etiquetas',
+      'Historial de pedidos de usuario',
+      'Inicio de sesión y creación de usuario',
+      'Detalle de productos con información clara',
+      'Control de stock global en tiempo real',
     ],
     liveUrl: 'https://ecommerce-molly-ada.netlify.app/',
     githubUrl: 'https://github.com/Molly2605/e-commerce-ada',
   },
   {
-    title: 'Latitud Sur Material gráfico de marca',
+    title: 'Latitud Sur Material Gráfico de Marca',
+    role: 'UX/UI Designer y Brand Designer (mockups conceptuales)',
+    impact: 'Generé un conjunto de materiales conceptuales que permiten visualizar la aplicación de la identidad visual de Latitud Sur, reforzando la percepción de la marca en contextos publicitarios simulados.',
     description:
-      'Página de aterrizaje moderna para producto SaaS con alta conversión.',
+      'Material gráfico y branding conceptual para Latitud Sur, incluyendo mockups de posters y merchandising.',
     fullDescription:
-      'Una landing page optimizada para conversión desarrollada con Next.js. Incluye secciones de hero, características, testimonios, precios y CTA estratégicamente ubicados. Diseñada siguiendo mejores prácticas de UX/UI para maximizar conversiones.',
+      'Este proyecto complementa la landing page de Latitud Sur mediante la creación de material gráfico conceptual y mockups de branding. Diseñé piezas visuales representando posters, merchandising como bolsas de tela y stickers, con el objetivo de ilustrar cómo se podría aplicar la identidad visual de la marca. Todos los elementos fueron presentados como mockups digitales para fines de evaluación y aprendizaje dentro de la beca de Salesforce, siguiendo buenas prácticas de diseño UX/UI y coherencia visual.',
     img: '/img/latitud-merch-uxui.png',
     technologies: [
       'adobe Illustrator',
       'A/B Testing',
     ],
     features: [
-      'Aplicación consistente de la identidad visual de la marca',
-      'Diseño de piezas gráficas para múltiples soportes',
-      'Adaptación de diseños a distintos formatos y escalas',
-      'Enfoque en comunicación clara y reconocimiento de marca',
+      'Mockups conceptuales de posters y merchandising',
+      'Diseño coherente con la identidad visual de la marca',
+      'Adaptación de diseños a distintos formatos digitales',
+      'Presentación visual profesional para evaluación y aprendizaje',
     ],
     liveUrl: 'https://drive.google.com/drive/folders/11mTxu-lPNdLnVU9fHfeZ5Hu1MOCYdkTL?usp=sharing',
   },
