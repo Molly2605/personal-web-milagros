@@ -17,10 +17,11 @@ export default function Navigation() {
   }, [])
 
   const navItems = [
-    { name: 'Inicio', href: '#home' },
-    { name: 'Sobre Mí', href: '#about' },
-    { name: 'Proyectos', href: '#projects' },
-    { name: 'Contacto', href: '#contact' },
+  { name: 'Inicio', href: '#home' },
+  { name: 'Sobre Mí', href: '#about' },
+  { name: 'Proyectos', href: '#projects' },
+  { name: 'FAQ', href: '#faq' },
+  { name: 'Contacto', href: '#contact' },
   ]
 
   const scrollToSection = (href: string) => {
