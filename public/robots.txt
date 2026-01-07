@@ -1,6 +1,9 @@
-# robots.txt para Milagros Lasschar Portfolio
-
+# *
 User-agent: *
 Allow: /
 
+# Host
+Host: https://milagros-lasschar-portfolio.netlify.app
+
+# Sitemaps
 Sitemap: https://milagros-lasschar-portfolio.netlify.app/sitemap.xml
