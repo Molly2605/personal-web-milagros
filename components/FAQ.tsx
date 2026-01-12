@@ -77,7 +77,7 @@ export default function FAQ() {
     }
 
     return (
-        <section id="faq" className="section-container bg-gray-50 py-16">
+        <section id="faq" className="section-container bg-background-light py-16">
             <motion.div
                 ref={ref}
                 initial="hidden"
@@ -87,29 +87,33 @@ export default function FAQ() {
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8">
                     <span className="gradient-text">Preguntas frecuentes</span>
                 </h2>
-                <div className="w-24 h-1 bg-gradient-to-r from-primary-600 to-accent-600 mx-auto mb-6 sm:mb-8" />
+                <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto mb-6 sm:mb-8 rounded" />
 
                 <div className="max-w-3xl mx-auto space-y-4">
                     {faqData.map((item, index) => (
                         <motion.div
                             key={index}
                             variants={itemVariants}
-                            className="border border-gray-200 rounded-lg overflow-hidden"
+                            className="border border-primary-200 rounded-xl overflow-hidden shadow-sm"
                         >
                             <button
                                 onClick={() => toggle(index)}
-                                className="w-full text-left px-4 py-3 bg-gray-100 hover:bg-gray-200 transition-colors flex justify-between items-center"
+                                className="w-full text-left px-5 py-4 bg-primary-50 hover:bg-primary-100 transition-colors flex justify-between items-center text-primary-800 font-medium text-lg"
                             >
                                 <span>{item.question}</span>
-                                <span className="text-xl font-bold">{openIndex === index ? '-' : '+'}</span>
+                                <span className="text-2xl font-bold">{openIndex === index ? '−' : '+'}</span>
                             </button>
                             {openIndex === index && (
-                                <div className="px-4 py-3 text-gray-700 bg-white">{item.answer}</div>
+                                <div className="px-5 py-4 bg-accent-50 text-primary-900 border-t border-primary-200">
+                                    {item.answer}
+                                </div>
                             )}
                         </motion.div>
                     ))}
                 </div>
             </motion.div>
         </section>
+
+
     )
 }

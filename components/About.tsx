@@ -116,7 +116,7 @@ export default function About() {
             className="relative order-1 md:order-2"
             variants={itemVariants}
           >
-            <div className="bg-gradient-to-br from-primary-100 to-accent-100 rounded-2xl p-6 sm:p-8 shadow-xl">
+            <div className="bg-gradient-to-br from-primary-50 to-accent-100 rounded-2xl p-6 sm:p-8 shadow-xl">
               <div className="aspect-square bg-gradient-to-br from-primary-400 to-accent-400 rounded-xl flex items-center justify-center">
                 <img src="/img/my-profile.png" alt="mi-foto-personal" />
               </div>

@@ -2,7 +2,6 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { HiArrowDown } from 'react-icons/hi'
 import { FaGithub, FaLinkedin, FaBehance } from 'react-icons/fa'
 
 export default function Hero() {
@@ -19,10 +18,27 @@ export default function Hero() {
     >
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-20 -right-20 sm:-top-40 sm:-right-40 w-40 h-40 sm:w-80 sm:h-80 bg-primary-200 rounded-full mix-blend-multiply filter blur-xl opacity-50 sm:opacity-70 animate-blob"></div>
-        <div className="absolute -bottom-20 -left-20 sm:-bottom-40 sm:-left-40 w-40 h-40 sm:w-80 sm:h-80 bg-accent-200 rounded-full mix-blend-multiply filter blur-xl opacity-50 sm:opacity-70 animate-blob animation-delay-2000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 sm:w-80 sm:h-80 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-50 sm:opacity-70 animate-blob animation-delay-4000"></div>
+        {/* Blob 1: arriba derecha*/}
+        <div className="absolute -top-20 -right-20 sm:-top-40 sm:-right-40 w-40 h-40 sm:w-80 sm:h-80 
+                  bg-primary-500 rounded-full mix-blend-multiply filter blur-2xl opacity-80 sm:opacity-90 animate-blob">
+        </div>
+        
+        {/* Blob 2: abajo izquierda*/}
+        <div className="absolute -bottom-20 -left-20 sm:-bottom-40 sm:-left-40 w-40 h-40 sm:w-80 sm:h-80 
+                  bg-accent-400 rounded-full mix-blend-multiply filter blur-2xl opacity-75 sm:opacity-85 animate-blob animation-delay-2000">
+        </div>
+
+        {/* Blob 3: centro*/}
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 sm:w-80 sm:h-80 
+                  bg-primary-300 rounded-full mix-blend-multiply filter blur-2xl opacity-65 sm:opacity-75 animate-blob animation-delay-4000">
+        </div>
+
+        {/* Blob 4: arriba izquierda*/}
+        <div className="absolute -top-24 -left-24 sm:-top-48 sm:-left-48 w-40 h-40 sm:w-80 sm:h-80
+                  bg-primary-200 rounded-full mix-blend-multiply filter blur-2xl opacity-80 sm:opacity-90 animate-blob animation-delay-1000">
+        </div>
       </div>
+
 
       <div className="section-container relative z-10 text-center">
         <motion.div
