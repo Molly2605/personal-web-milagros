@@ -45,8 +45,8 @@ export default function About() {
     },
     {
       icon: FaRocket,
-      title: 'Performance & SEO',
-      description: 'Optimización de Performance, SEO Técnico, Core Web Vitals, Optimización de imágenes y assets',
+      title: 'Performance, SEO Técnico & AEO',
+      description: 'Optimización de performance y SEO técnico con enfoque en AEO (Answer Engine Optimization), aplicando buenas prácticas de UX/UI y Frontend.',
       color: 'from-indigo-500 to-blue-500',
     },
     {
