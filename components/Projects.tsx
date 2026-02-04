@@ -28,7 +28,8 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="section-container bg-gray-50">
+    <section id="projects"
+      className="section-container bg-white rounded-3xl shadow-sm">
       <motion.div
         ref={ref}
         initial="hidden"
@@ -58,9 +59,8 @@ export default function Projects() {
               onClick={() => setSelectedProject(index)}
               whileHover={{ scale: 1.02 }}
               itemScope
-              itemType="https://schema.org/CreativeWork"
-            >
-              
+              itemType="https://schema.org/CreativeWork">
+
               <div className="relative h-40 sm:h-48">
                 {project.img ? (
                   <Image

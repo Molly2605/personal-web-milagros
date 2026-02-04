@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
           <div>
             <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 gradient-text">
-              Milagros Belén Lasschar
+              Milagros Lasschar
             </h3>
             <p className="text-sm sm:text-base text-background-light/90">
               Desarrolladora web · Diseñadora UX/UI · Admin CRM en Salesforce. Amante de la comunicación con impacto, madre de gatos y activista por la visibilización de feminidades. Estudiante de Paleontología en la UBA.
@@ -78,7 +78,7 @@ export default function Footer() {
 
         <div className="border-t border-secondary-600 pt-6 sm:pt-8 text-center text-background-light/80">
           <p className="text-xs sm:text-sm">
-            © {currentYear} Portfolio Milagros Belén Lasschar. Todos los derechos reservados. Hecho con 💗 usando Next.js
+            © {currentYear} Portfolio MILAGROS BELÉN LASSCHAR. Todos los derechos reservados. Hecho con 💗 usando Next.js
           </p>
         </div>
       </div>

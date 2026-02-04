@@ -77,7 +77,7 @@ export default function FAQ() {
     }
 
     return (
-        <section id="faq" className="section-container bg-background-light py-16">
+        <section id="faq" className="section-container py-16">
             <motion.div
                 ref={ref}
                 initial="hidden"
@@ -113,7 +113,5 @@ export default function FAQ() {
                 </div>
             </motion.div>
         </section>
-
-
     )
 }

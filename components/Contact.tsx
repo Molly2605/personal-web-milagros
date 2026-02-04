@@ -90,7 +90,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="section-container bg-white">
+    <section id="contact" className="section-container">
       <motion.div
         ref={ref}
         initial="hidden"
@@ -102,7 +102,7 @@ export default function Contact() {
             <span className="gradient-text">Contacto</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-600 to-accent-600 mx-auto mb-6 sm:mb-8"></div>
-          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4 sm:px-0">
+          <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto px-4 sm:px-0">
             ¿Tenés un proyecto o una oportunidad? Hablemos.
           </p>
         </motion.div>
@@ -110,7 +110,7 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-8 sm:gap-12">
           {/* Información de Contacto */}
           <motion.div variants={itemVariants} className="order-2 md:order-1">
-            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-300 mb-4 sm:mb-6">
               Información de Contacto
             </h3>
             <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8">
@@ -125,7 +125,7 @@ export default function Contact() {
                   </div>
                   <div className="min-w-0">
                     <p className="text-xs sm:text-sm text-gray-500">{info.label}</p>
-                    <p className="text-base sm:text-lg font-semibold text-gray-900 truncate">
+                    <p className="text-base sm:text-lg font-semibold text-gray-300 truncate">
                       {info.value}
                     </p>
                   </div>
@@ -134,7 +134,7 @@ export default function Contact() {
             </div>
 
             <div>
-              <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">
+              <h4 className="text-lg sm:text-xl font-bold text-gray-300 mb-3 sm:mb-4">
                 Sígueme en
               </h4>
               <div className="flex space-x-3 sm:space-x-4">
@@ -162,7 +162,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-semibold text-gray-700 mb-2"
+                  className="block text-sm font-semibold text-gray-300 mb-2"
                 >
                   Nombre
                 </label>
@@ -181,7 +181,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-semibold text-gray-700 mb-2"
+                  className="block text-sm font-semibold text-gray-300 mb-2"
                 >
                   Email
                 </label>
@@ -200,7 +200,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-semibold text-gray-700 mb-2"
+                  className="block text-sm font-semibold text-gray-300 mb-2"
                 >
                   Mensaje
                 </label>

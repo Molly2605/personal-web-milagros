@@ -5,10 +5,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 @layer base {
-  html { scroll-behavior: smooth; }
-  
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-text antialiased;
+    @apply text-text antialiased;
+    background:rgb(15, 0, 3);
   }
 }
 
@@ -16,27 +19,15 @@
   .section-container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24;
   }
-  
+
   .gradient-text {
     @apply bg-gradient-to-r from-primary-500 to-accent-500 bg-clip-text text-transparent;
   }
-  
+
   .card-hover {
     @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1 sm:hover:-translate-y-2 bg-secondary-500 text-text;
   }
 }
-
-@keyframes blob {
-  5%   { transform: translate(0px, 0px) scale(1) rotate(0deg); }
-  25%  { transform: translate(60px, -80px) scale(1.3) rotate(15deg); }
-  50%  { transform: translate(-50px, 60px) scale(0.8) rotate(-10deg); }
-  75%  { transform: translate(40px, 40px) scale(1.2) rotate(5deg); }
-  100% { transform: translate(0px, 0px) scale(1) rotate(0deg); }
-}
-
-.animate-blob { animation: blob 6s infinite; }
-.animation-delay-2000 { animation-delay: 2s; animation-duration: 7s; }
-.animation-delay-4000 { animation-delay: 4s; animation-duration: 8s; }
 
 .sr-only {
   position: absolute;

@@ -14,31 +14,8 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-primary-50 via-white to-accent-50"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden  "
     >
-      {/* Background decoration */}
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Blob 1: arriba derecha*/}
-        <div className="absolute -top-20 -right-20 sm:-top-40 sm:-right-40 w-40 h-40 sm:w-80 sm:h-80 
-                  bg-primary-500 rounded-full mix-blend-multiply filter blur-2xl opacity-80 sm:opacity-90 animate-blob">
-        </div>
-
-        {/* Blob 2: abajo izquierda*/}
-        <div className="absolute -bottom-20 -left-20 sm:-bottom-40 sm:-left-40 w-40 h-40 sm:w-80 sm:h-80 
-                  bg-accent-400 rounded-full mix-blend-multiply filter blur-2xl opacity-75 sm:opacity-85 animate-blob animation-delay-2000">
-        </div>
-
-        {/* Blob 3: centro*/}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 sm:w-80 sm:h-80 
-                  bg-primary-300 rounded-full mix-blend-multiply filter blur-2xl opacity-65 sm:opacity-75 animate-blob animation-delay-4000">
-        </div>
-
-        {/* Blob 4: arriba izquierda*/}
-        <div className="absolute -top-24 -left-24 sm:-top-48 sm:-left-48 w-40 h-40 sm:w-80 sm:h-80
-                  bg-primary-200 rounded-full mix-blend-multiply filter blur-2xl opacity-80 sm:opacity-90 animate-blob animation-delay-1000">
-        </div>
-      </div>
-
 
       <div className="section-container relative z-10 text-center">
         <motion.div
@@ -54,13 +31,13 @@ export default function Hero() {
           >
             <span className="gradient-text">Hola, soy Molly!</span>
             <br />
-            <span className="text-gray-900">Desarrolladora Web</span>
+            <span className="text-gray-300">Desarrolladora Web</span>
             <br />
-            <span className="text-gray-700">& Diseñadora UX/UI</span>
+            <span className="text-gray-400">& Diseñadora UX/UI</span>
           </motion.h1>
 
           <motion.p
-            className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-4 sm:px-0"
+            className="text-lg sm:text-xl md:text-2xl text-gray-400 mb-6 sm:mb-8 max-w-3xl mx-auto px-4 sm:px-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
