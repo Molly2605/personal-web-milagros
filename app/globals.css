@@ -37,3 +37,15 @@
 .animate-blob { animation: blob 6s infinite; }
 .animation-delay-2000 { animation-delay: 2s; animation-duration: 7s; }
 .animation-delay-4000 { animation-delay: 4s; animation-duration: 8s; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

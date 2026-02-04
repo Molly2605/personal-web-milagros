@@ -22,7 +22,7 @@ export default function Hero() {
         <div className="absolute -top-20 -right-20 sm:-top-40 sm:-right-40 w-40 h-40 sm:w-80 sm:h-80 
                   bg-primary-500 rounded-full mix-blend-multiply filter blur-2xl opacity-80 sm:opacity-90 animate-blob">
         </div>
-        
+
         {/* Blob 2: abajo izquierda*/}
         <div className="absolute -bottom-20 -left-20 sm:-bottom-40 sm:-left-40 w-40 h-40 sm:w-80 sm:h-80 
                   bg-accent-400 rounded-full mix-blend-multiply filter blur-2xl opacity-75 sm:opacity-85 animate-blob animation-delay-2000">
@@ -91,20 +91,36 @@ export default function Hero() {
           </motion.div>
 
           {/* Botón de descarga de CV */}
+          {/* Botones de descarga de CV */}
           <motion.div
-            className="flex justify-center"
+            className="flex flex-col sm:flex-row justify-center gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8 }}
           >
+            {/* CV ATS */}
             <a
-              href="/cv/CV Milagros Lasschar.pdf"
-              download="CV Milagros Lasschar.pdf"
-              className="inline-flex items-center space-x-2 bg-gradient-to-r from-primary-600 to-accent-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all text-sm sm:text-base"
+              href="/cv/milagros-lasschar-cv-front-end-ux-ui-ats.pdf"
+              download="milagros-lasschar-cv-front-end-ux-ui-ats.pdf"
+              className="inline-flex items-center justify-center bg-gradient-to-r from-primary-600 to-accent-600 
+               text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold shadow-lg 
+               hover:shadow-xl transition-all text-sm sm:text-base"
             >
-              <span>Descargar CV</span>
+              Descargar CV ATS
+            </a>
+
+            {/* CV Visual */}
+            <a
+              href="/cv/milagros-lasschar-cv.pdf"
+              download="milagros-lasschar-cv.pdf"
+              className="inline-flex items-center justify-center bg-white text-primary-600 
+               px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold border-2 border-primary-600 
+               hover:bg-primary-50 transition-all text-sm sm:text-base"
+            >
+              Descargar CV visual
             </a>
           </motion.div>
+
         </motion.div>
       </div>
     </section>

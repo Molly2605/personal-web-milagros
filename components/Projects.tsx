@@ -60,6 +60,7 @@ export default function Projects() {
               itemScope
               itemType="https://schema.org/CreativeWork"
             >
+              
               <div className="relative h-40 sm:h-48">
                 {project.img ? (
                   <Image
